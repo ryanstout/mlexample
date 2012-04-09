@@ -1,0 +1,43 @@
+2012-04-05 14:07:26 weka.gui.GUIChooser main
+INFO: Logging started
+Refreshing GOE props...
+---Registering Weka Editors---
+Trying to add database driver (JDBC): RmiJdbc.RJDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): jdbc.idbDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): org.gjt.mm.mysql.Driver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): com.mckoi.JDBCDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): org.hsqldb.jdbcDriver - Warning, not in CLASSPATH?
+[KnowledgeFlow] Loading properties and plugins...
+[KnowledgeFlow] Initializing KF...
+2012-04-05 14:07:29 weka.gui.explorer.Explorer <init>
+INFO: Weka Explorer
+2012-04-05 14:07:29 weka.gui.explorer.Explorer <init>
+INFO: (c) 1999-2011 The University of Waikato, Hamilton, New Zealand
+2012-04-05 14:07:29 weka.gui.explorer.Explorer <init>
+INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
+2012-04-05 14:07:29 weka.gui.explorer.Explorer <init>
+INFO: Started on Thursday, 5 April 2012
+2012-04-05 14:07:49 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now Relationships (15570 instances)
+2012-04-05 14:07:59 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Started weka.attributeSelection.CfsSubsetEval
+2012-04-05 14:07:59 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Command: weka.attributeSelection.CfsSubsetEval -s "weka.attributeSelection.BestFirst -D 1 -N 5"
+2012-04-05 14:07:59 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+2012-04-05 14:07:59 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+2012-04-05 14:08:58 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Finished weka.attributeSelection.CfsSubsetEval weka.attributeSelection.BestFirst
+2012-04-05 14:10:16 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now Relationships (15579 instances)
+2012-04-05 14:10:28 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Started weka.attributeSelection.InfoGainAttributeEval
+2012-04-05 14:10:28 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Command: weka.attributeSelection.InfoGainAttributeEval -s "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
+2012-04-05 14:10:28 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
+2012-04-05 14:10:28 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+2012-04-05 14:10:35 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Finished weka.attributeSelection.InfoGainAttributeEval weka.attributeSelection.Ranker
