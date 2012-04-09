@@ -13,3 +13,5 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/lib/weka-3-7-5/packages/weka.log
+/data/sentiment_split.arff
