@@ -1,0 +1,2 @@
+module SentimentPredictorHelper
+end

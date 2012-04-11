@@ -26,8 +26,8 @@ include_class "weka.core.Utils"
 
 arff_file = File.dirname(__FILE__) + "/../../data/sentiment.arff"
 
-# options = "weka.classifiers.meta.FilteredClassifier -F \"weka.filters.unsupervised.attribute.StringToWordVector -R first-last -P wv- -W 50000 -prune-rate -1.0 -T -N 0 -L -stemmer weka.core.stemmers.NullStemmer -M 1 -tokenizer \\\"weka.core.tokenizers.NGramTokenizer -delimiters \\\\\\\" \\\\\\\\\\r\\\\\\\\\\n\\\\\\\\\\t.,;:\\\\\\\\\\'\\\\\\\\\\\\\\\"()?!\\\\\\\" -max 2 -min 1\\\"\" -W weka.classifiers.functions.LibLINEAR -- -S 0 -C 1.0 -E 0.01 -B 1.0 -P"
-options = "weka.classifiers.meta.FilteredClassifier -F \"weka.filters.unsupervised.attribute.StringToWordVector -R first-last -P wv- -W 1000 -prune-rate -1.0 -T -N 0 -L -stemmer weka.core.stemmers.NullStemmer -M 1 \" -W weka.classifiers.functions.LibLINEAR -- -S 0 -C 1.0 -E 0.01 -B 1.0 -P"
+options = "weka.classifiers.meta.FilteredClassifier -F \"weka.filters.unsupervised.attribute.StringToWordVector -R first-last -P wv- -W 50000 -prune-rate -1.0 -T -N 0 -L -stemmer weka.core.stemmers.NullStemmer -M 1 -tokenizer \\\"weka.core.tokenizers.NGramTokenizer -delimiters \\\\\\\" \\\\\\\\\\r\\\\\\\\\\n\\\\\\\\\\t.,;:\\\\\\\\\\'\\\\\\\\\\\\\\\"()?!\\\\\\\" -max 2 -min 1\\\"\" -W weka.classifiers.functions.LibLINEAR -- -S 0 -C 1.0 -E 0.01 -B 1.0 -P"
+# options = "weka.classifiers.meta.FilteredClassifier -F \"weka.filters.unsupervised.attribute.StringToWordVector -R first-last -P wv- -W 1000 -prune-rate -1.0 -T -N 0 -L -stemmer weka.core.stemmers.NullStemmer -M 1 \" -W weka.classifiers.functions.LibLINEAR -- -S 0 -C 1.0 -E 0.01 -B 1.0 -P"
 
 arff = FileReader.new(arff_file)
 data = Instances.new(arff)
