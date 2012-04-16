@@ -1,4 +1,4 @@
-2012-04-10 14:44:22 weka.gui.GUIChooser main
+2012-04-16 14:52:14 weka.gui.GUIChooser main
 INFO: Logging started
 Refreshing GOE props...
 ---Registering Weka Editors---
@@ -9,47 +9,11 @@ Trying to add database driver (JDBC): com.mckoi.JDBCDriver - Warning, not in CLA
 Trying to add database driver (JDBC): org.hsqldb.jdbcDriver - Warning, not in CLASSPATH?
 [KnowledgeFlow] Loading properties and plugins...
 [KnowledgeFlow] Initializing KF...
-2012-04-10 14:44:26 weka.gui.explorer.Explorer <init>
+2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
 INFO: Weka Explorer
-2012-04-10 14:44:26 weka.gui.explorer.Explorer <init>
+2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
 INFO: (c) 1999-2011 The University of Waikato, Hamilton, New Zealand
-2012-04-10 14:44:26 weka.gui.explorer.Explorer <init>
+2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
 INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
-2012-04-10 14:44:26 weka.gui.explorer.Explorer <init>
-INFO: Started on Tuesday, 10 April 2012
-2012-04-10 14:44:37 weka.gui.explorer.PreprocessPanel$14 run
-INFO: Base relation is now Tweets (19999 instances)
-2012-04-10 14:44:54 weka.gui.explorer.PreprocessPanel$15 run
-INFO: Command: weka.filters.unsupervised.attribute.StringToWordVector -R first-last -P w- -W 1000 -prune-rate -1.0 -N 0 -L -stemmer weka.core.stemmers.NullStemmer -M 1 -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\""
-2012-04-10 14:44:55 weka.gui.explorer.PreprocessPanel$14 run
-INFO: Base relation is now Tweets-weka.filters.unsupervised.attribute.StringToWordVector-R1-Pw--W1000-prune-rate-1.0-N0-L-stemmerweka.core.stemmers.NullStemmer-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!" (19999 instances)
-2012-04-10 14:45:07 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Started weka.attributeSelection.CfsSubsetEval
-2012-04-10 14:45:07 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Command: weka.attributeSelection.CfsSubsetEval -s "weka.attributeSelection.BestFirst -D 1 -N 5"
-2012-04-10 14:45:07 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 5"
-2012-04-10 14:45:07 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-2012-04-10 14:46:45 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Finished weka.attributeSelection.CfsSubsetEval weka.attributeSelection.BestFirst
-2012-04-10 14:47:13 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Started weka.attributeSelection.InfoGainAttributeEval
-2012-04-10 14:47:13 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Command: weka.attributeSelection.InfoGainAttributeEval -s "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
-2012-04-10 14:47:13 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
-2012-04-10 14:47:13 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-2012-04-10 14:47:57 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Finished weka.attributeSelection.InfoGainAttributeEval weka.attributeSelection.Ranker
-2012-04-10 15:07:31 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Started weka.attributeSelection.InfoGainAttributeEval
-2012-04-10 15:07:31 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Command: weka.attributeSelection.InfoGainAttributeEval -s "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
-2012-04-10 15:07:31 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
-2012-04-10 15:07:31 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-2012-04-10 15:12:51 weka.gui.explorer.AttributeSelectionPanel$10 run
-INFO: Finished weka.attributeSelection.InfoGainAttributeEval weka.attributeSelection.Ranker
+2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
+INFO: Started on Monday, 16 April 2012

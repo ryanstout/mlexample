@@ -1,5 +1,5 @@
 Mlexample::Application.routes.draw do
-  resources :sentiment_predictor
+  resources :sentiments
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

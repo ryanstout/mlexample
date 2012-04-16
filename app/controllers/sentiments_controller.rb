@@ -20,8 +20,11 @@ include_class "weka.core.SparseInstance"
 
 
 
-class SentimentPredictorController < ApplicationController
+class SentimentsController < ApplicationController
   def index
+  end
+  
+  def create
     
     @arff ||= FileReader.new(Rails.root.join("data/sentiment.arff").to_s)
     @classifier ||= SerializationHelper.read(Rails.root.join("models/sentiment.model").to_s)
@@ -34,13 +37,10 @@ class SentimentPredictorController < ApplicationController
     
     instance = SparseInstance.new(@data.num_attributes)
     instance.set_dataset(@data)
-    instance.set_value(@data.attribute(0), params[:text])
+    instance.set_value(@data.attribute(0), params[:sentiment][:message])
     
     result = @classifier.distribution_for_instance(instance).first
     
     render :text => result    
-  end
-  
-  def create
   end
 end
