@@ -1,6 +1,10 @@
 <h1>Sentiment Predictor</h1>
 
+<% if @message %>
+	<div class="alert"><%= @message %></div>
+<% end %>
+
 <%= form_for Sentiment.new do |f| %>
-	<%= f.text_area :message %>
-	<%= f.submit %>
+	<%= f.text_area :message, :class => 'input-xlarge', :rows => nil %><br />
+	<%= f.submit 'Check Sentiment' %>
 <% end %>

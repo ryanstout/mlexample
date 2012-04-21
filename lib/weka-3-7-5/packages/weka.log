@@ -1,4 +1,4 @@
-2012-04-16 14:52:14 weka.gui.GUIChooser main
+2012-04-20 15:17:23 weka.gui.GUIChooser main
 INFO: Logging started
 Refreshing GOE props...
 ---Registering Weka Editors---
@@ -9,11 +9,69 @@ Trying to add database driver (JDBC): com.mckoi.JDBCDriver - Warning, not in CLA
 Trying to add database driver (JDBC): org.hsqldb.jdbcDriver - Warning, not in CLASSPATH?
 [KnowledgeFlow] Loading properties and plugins...
 [KnowledgeFlow] Initializing KF...
-2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
+2012-04-20 15:17:25 weka.gui.explorer.Explorer <init>
 INFO: Weka Explorer
-2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
+2012-04-20 15:17:25 weka.gui.explorer.Explorer <init>
 INFO: (c) 1999-2011 The University of Waikato, Hamilton, New Zealand
-2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
+2012-04-20 15:17:25 weka.gui.explorer.Explorer <init>
 INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
-2012-04-16 14:52:17 weka.gui.explorer.Explorer <init>
-INFO: Started on Monday, 16 April 2012
+2012-04-20 15:17:25 weka.gui.explorer.Explorer <init>
+INFO: Started on Friday, 20 April 2012
+2012-04-20 15:17:41 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now Tweets (19998 instances)
+2012-04-20 15:18:37 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.StringToWordVector -R first-last -P w- -W 1000 -prune-rate -1.0 -N 0 -L -stemmer weka.core.stemmers.NullStemmer -M 1 -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\""
+2012-04-20 15:18:39 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now Tweets-weka.filters.unsupervised.attribute.StringToWordVector-R1-Pw--W1000-prune-rate-1.0-N0-L-stemmerweka.core.stemmers.NullStemmer-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!" (19998 instances)
+2012-04-20 15:19:41 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibLINEAR
+2012-04-20 15:19:41 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibLINEAR -S 1 -C 1.0 -E 0.01 -B 1.0
+2012-04-20 15:19:57 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibLINEAR
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-04-20 15:19:57 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-04-20 15:26:43 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Started weka.attributeSelection.InfoGainAttributeEval
+2012-04-20 15:26:43 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Command: weka.attributeSelection.InfoGainAttributeEval -s "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
+2012-04-20 15:26:43 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
+2012-04-20 15:26:43 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+2012-04-20 15:27:20 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Finished weka.attributeSelection.InfoGainAttributeEval weka.attributeSelection.Ranker
+2012-04-20 15:47:37 weka.gui.explorer.Explorer <init>
+INFO: Weka Explorer
+2012-04-20 15:47:37 weka.gui.explorer.Explorer <init>
+INFO: (c) 1999-2011 The University of Waikato, Hamilton, New Zealand
+2012-04-20 15:47:37 weka.gui.explorer.Explorer <init>
+INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
+2012-04-20 15:47:37 weka.gui.explorer.Explorer <init>
+INFO: Started on Friday, 20 April 2012
+2012-04-20 15:47:49 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now Tweets (19998 instances)
+2012-04-20 15:48:42 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.StringToWordVector -R first-last -P w- -W 1000 -prune-rate -1.0 -N 0 -L -stemmer weka.core.stemmers.NullStemmer -M 1 -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\""
+2012-04-20 15:48:42 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now Tweets-weka.filters.unsupervised.attribute.StringToWordVector-R1-Pw--W1000-prune-rate-1.0-N0-L-stemmerweka.core.stemmers.NullStemmer-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!" (19998 instances)
+2012-04-20 15:49:39 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibLINEAR
+2012-04-20 15:49:39 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibLINEAR -S 1 -C 1.0 -E 0.01 -B 1.0
+2012-04-20 15:49:54 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibLINEAR
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-04-20 15:49:54 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-04-20 15:55:47 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Started weka.attributeSelection.InfoGainAttributeEval
+2012-04-20 15:55:47 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Command: weka.attributeSelection.InfoGainAttributeEval -s "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
+2012-04-20 15:55:47 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1"
+2012-04-20 15:55:47 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.InfoGainAttributeEval " -S "weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+2012-04-20 15:56:25 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Finished weka.attributeSelection.InfoGainAttributeEval weka.attributeSelection.Ranker

@@ -41,6 +41,10 @@ class SentimentsController < ApplicationController
     
     result = @classifier.distribution_for_instance(instance).first
     
-    render :text => result
+    percent_positive = 1 - result.to_f
+    
+    @message = "The text is #{(percent_positive*100.0).round}% positive"
+    
+    render :action => 'index'
   end
 end
