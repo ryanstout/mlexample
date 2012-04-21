@@ -41,6 +41,6 @@ class SentimentsController < ApplicationController
     
     result = @classifier.distribution_for_instance(instance).first
     
-    render :text => result    
+    render :text => result
   end
 end
