@@ -24,6 +24,7 @@ class SentimentsController < ApplicationController
   def index
   end
   
+  # Loads in the arff, model, and dataset
   def setup_classifier
     unless @classifier
       arff_path = Rails.root.join("data/sentiment.arff").to_s
@@ -42,6 +43,7 @@ class SentimentsController < ApplicationController
     end
   end
   
+  # Prints out the form and the estimated pos/neg value
   def create
     setup_classifier
 

@@ -1,3 +1,5 @@
+# Example of how to query a model that is already built
+
 arff_path = Rails.root.join("data/sentiment.arff").to_s
 arff = FileReader.new(arff_path)
 

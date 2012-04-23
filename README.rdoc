@@ -1,3 +1,6 @@
+# Run WEKA gui (loads with liblinear and libsvm and more Java heap)
+./lib/weka.sh
+
 # Train model
 jruby  -J-server -J-Xmx2000m -S lib/sentiment/train.rb
 

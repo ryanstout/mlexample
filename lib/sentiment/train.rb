@@ -1,6 +1,9 @@
 # jruby  -J-server -J-Xmx4000m -S train.rb
 # Build status info cache model averages after
 
+
+# http://weka.wikispaces.com/Use+WEKA+in+your+Java+code
+
 # Load java libs
 require 'java'
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'weka-3-7-5', 'weka.jar'))
@@ -9,9 +12,6 @@ require File.expand_path(File.join(File.dirname(__FILE__), '/../weka-3-7-5/packa
 require File.expand_path(File.join(File.dirname(__FILE__), '/../weka-3-7-5/packages/packages/LibLINEAR/LibLINEAR.jar'))
 require File.expand_path(File.join(File.dirname(__FILE__), '/../weka-3-7-5/packages/packages/LibSVM/lib/libsvm.jar'))
 require File.expand_path(File.join(File.dirname(__FILE__), '/../weka-3-7-5/packages/packages/LibLINEAR/lib/liblinear-1.8.jar'))
-
-
-# http://weka.wikispaces.com/Use+WEKA+in+your+Java+code
 
 # Include classes
 include_class "weka.core.Instances"
